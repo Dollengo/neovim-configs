@@ -107,12 +107,14 @@ alias updsys="echo Updating System... && sudo apt autoremove && sudo apt update 
 alias updsh="source ~/.zshrc && omz update && clear && clear"
 alias edtsh="nvim ~/.zshrc"
 alias brave="flatpak run com.brave.Browser "$URL""
-alias shhelp="echo Commands: && echo updsys: Update the system, update the applications, the system generally and drivers. && echo updzsh: update the zsh extensions and command && echo shhelp: show the zsh commands && echo edtsh: edit the zsh commands and more && echo cls: clear command && echo brave: brave browser command && echo cdata: open the 'Dados' directory && echo jstmdt: just mount the 'Dados' directory && echo dolltor: text editor created by dollengo, dolltor archive-name && echo arch: open the archive managment in actually directory && echo gitopen: open the actually git repository && echo hc: clear the history "
+alias shhelp="echo Commands: && echo updsys: Update the system, update the applications, the system generally and drivers. && echo updzsh: update the zsh extensions and command && echo shhelp: show the zsh commands && echo edtsh: edit the zsh commands and more && echo cls: clear command && echo brave: brave browser command && echo cdata: open the 'Dados' directory && echo jstmdt: just mount the 'Dados' directory && echo dolltor: text editor created by dollengo, dolltor archive-name && echo arch: open the archive managment in actually directory && echo gitopen: open the actually git repository && echo hc: clear the history && dollcalc: calculator by dollengo "
 alias cls="clear"
 alias hc="echo y | history -c"
 alias cdata="cd ../../media/dollengo/Dados"
 alias jstmdt="sudo mount /dev/sdb2 /media/dollengo/Dados/"
 alias arch="xdg-open ."
+alias vim="nvim"
+alias dmenu_run="dmr"
 alias gitopen='
     if [ -d ".git" ]; then
         URL=$(git remote get-url origin 2>/dev/null)
@@ -125,6 +127,7 @@ alias gitopen='
         echo "O diretório atual não é um repositório Git."
     fi
 '
+alias dollcalc="../../../../../media/dollengo/Dados/Projetos/CalcDoll/DollCalc"
 
 plugins=(zsh-vscode)
 
