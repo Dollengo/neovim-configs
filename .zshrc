@@ -114,7 +114,7 @@ alias cdata="cd ../../media/dollengo/Dados"
 alias jstmdt="sudo mount /dev/sdb2 /media/dollengo/Dados/"
 alias arch="xdg-open ."
 alias vim="nvim"
-alias dmenu_run="dmr"
+alias dmr="dmenu_run"
 alias gitopen='
     if [ -d ".git" ]; then
         URL=$(git remote get-url origin 2>/dev/null)
